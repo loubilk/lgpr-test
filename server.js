@@ -13,9 +13,10 @@ app.get('/', function (req, res) {
 
 	require('dns').lookup(require('os').hostname(), function (err, add, fam) {
   console.log('addr: '+add);
+    res.send('addr: '+add);
 })
 	
-  res.send('Hello world, this is a new build number 2!!!!!!!\nfrom server : '+add);
+  res.send('Hello world, this is a new build number 2!!!!!!!\n');
 });
 
 app.listen(PORT);
