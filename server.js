@@ -7,8 +7,7 @@ const PORT = 8080;
 
 // App
 const app = express();
-r
-equire('dns').lookup(require('os').hostname(), function (err, add, fam) {
+require('dns').lookup(require('os').hostname(), function (err, add, fam) {
   console.log('addr: '+add);
 })
 
