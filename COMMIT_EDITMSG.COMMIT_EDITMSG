@@ -1,0 +1,20 @@
+commit
+
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/server.js b/server.js
+index 0b139a3..44859d4 100644
+--- a/server.js
++++ b/server.js
+@@ -8,7 +8,7 @@ const PORT = 8080;
+ // App
+ const app = express();
+ app.get('/', function (req, res) {
+-  res.send('Hello mighty world\n');
++  res.send('Hello world\n');
+ });
+ 
+ app.listen(PORT);
