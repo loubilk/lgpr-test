@@ -11,12 +11,9 @@ const app = express();
 
 app.get('/', function (req, res) {
 
-require('dns').lookup(require('os').hostname(), function (err, add, fam) {
-  console.log('addr: '+add +err +fam);
-    
-})
 
-  res.send('Hello world, this is a new build number 2!!!!!!!\n');
+  res.send('Hello jurassic world!\n');
+  
 });
 
 app.listen(PORT);
