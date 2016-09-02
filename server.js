@@ -7,8 +7,13 @@ const PORT = 8080;
 
 // App
 const app = express();
+r
+equire('dns').lookup(require('os').hostname(), function (err, add, fam) {
+  console.log('addr: '+add);
+})
+
 app.get('/', function (req, res) {
-  res.send('Hello world, this is a new build number 2!!!!!!!\n');
+  res.send('Hello world, this is a new build number 2!!!!!!!\nfrom server: '+add);
 });
 
 app.listen(PORT);
