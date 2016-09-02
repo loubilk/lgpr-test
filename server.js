@@ -13,7 +13,7 @@ equire('dns').lookup(require('os').hostname(), function (err, add, fam) {
 })
 
 app.get('/', function (req, res) {
-  res.send('Hello world, this is a new build number 2!!!!!!!\nfrom server: '+add);
+  res.send('Hello world, this is a new build number 2!!!!!!!\nfrom server : '+add);
 });
 
 app.listen(PORT);
